@@ -6,11 +6,499 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LearnHub – Платформа для онлайн-обучения</title>
   <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/custom.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <header>
+    <nav class="navbar is-fixed-top is-link has-shadow" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <span class="icon" style="margin-right: 0.5rem;">
+            <i class="fas fa-code"></i>
+          </span>
+          <span class="text-logo">LearnHub</span>
+        </a>
+        <a role="button" class="navbar-burger" aria-label="toggle navigation" id="navbarBurger" style="color: white;">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#opportunities">Возможности</a>
+          <a class="navbar-item" href="#courses">Курсы</a>
+          <a class="navbar-item" href="#about">О нас</a>
+          <a class="navbar-item" href="#reviews">Отзывы</a>
+          <a class="navbar-item" href="#contacts">Контакты</a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <span class="icon">
+              <i class="fa-regular fa-circle-user"></i>
+            </span>
+            <span>Кабинет</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="" class="hero is-medium is-link pt-5 pb-2">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-2 has-text-weight-bold">
+          Учитесь в своем темпе
+        </h1>
+        <p class="subtitle mt-5">
+          Получайте новые навыки с помощью наших интерактивных курсов, разработанных опытными специалистами
+        </p>
+        <div class="buttons is-centered	">
+          <a href="#courses" class="button is-success is-medium has-text-white">
+            <span>Начать обучение</span>
+            <span class="icon is-small">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </a>
+          <button class="button is-link is-medium is-inverted">
+            <span class="icon is-small">
+              <i class="fas fa-play"></i>
+            </span>
+            <span>Смотреть демо</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-background-white" id="opportunities">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered has-text-dark">Почему выбирают LearnHub?</h2>
+
+      <div class="columns is-multiline is-centered">
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <div class="icon is-large mb-4 has-text-link">
+                <i class="fas fa-video fa-3x"></i>
+              </div>
+              <h3 class="title is-5 has-text-dark">Видео-уроки</h3>
+              <p class="has-text-grey-darker">Доступ к качественным видео-курсам от профессионалов индустрии</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <div class="icon is-large mb-4 has-text-link">
+                <i class="fas fa-certificate fa-3x"></i>
+              </div>
+              <h3 class="title is-5 has-text-dark">Сертификаты</h3>
+              <p class="has-text-grey-darker">Получайте признанные сертификаты по завершению каждого курса</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <div class="icon is-large mb-4 has-text-link">
+                <i class="fas fa-users fa-3x"></i>
+              </div>
+              <h3 class="title is-5 has-text-dark">Сообщество</h3>
+              <p class="has-text-grey-darker">Общайтесь с другими учащимися и получайте помощь в форуме</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <div class="icon is-large mb-4 has-text-link">
+                <i class="fas fa-clock fa-3x"></i>
+              </div>
+              <h3 class="title is-5 has-text-dark">Гибкий график</h3>
+              <p class="has-text-grey-darker">Учитесь в любое время, в любом месте, на любом устройстве</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <div class="icon is-large mb-4 has-text-link">
+                <i class="fas fa-chart-line fa-3x"></i>
+              </div>
+              <h3 class="title is-5 has-text-dark">Аналитика</h3>
+              <p class="has-text-grey-darker">Отслеживайте прогресс с подробной статистикой обучения</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <div class="icon is-large mb-4 has-text-link">
+                <i class="fas fa-headset fa-3x"></i>
+              </div>
+              <h3 class="title is-5 has-text-dark">Поддержка 24/7</h3>
+              <p class="has-text-grey-darker">Получайте быструю помощь от нашей команды в любое время</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-background-link" id="stats">
+    <div class="container">
+      <div class="columns is-multiline has-text-centered is-flex-wrap-wrap">
+        <div class="column is-6-mobile is-6-tablet is-3-desktop">
+          <div class="stat-item">
+            <h3 class="title is-3 has-text-white">5K+</h3>
+            <p class="subtitle is-6 has-text-white">Активных студентов</p>
+          </div>
+        </div>
+        <div class="column is-6-mobile is-6-tablet is-3-desktop">
+          <div class="stat-item">
+            <h3 class="title is-3 has-text-white">10+</h3>
+            <p class="subtitle is-6 has-text-white">Курсов на платформе</p>
+          </div>
+        </div>
+        <div class="column is-6-mobile is-6-tablet is-3-desktop">
+          <div class="stat-item">
+            <h3 class="title is-3 has-text-white">95%</h3>
+            <p class="subtitle is-6 has-text-white">Процент довольных клиентов</p>
+          </div>
+        </div>
+        <div class="column is-6-mobile is-6-tablet is-3-desktop">
+          <div class="stat-item">
+            <h3 class="title is-3 has-text-white">15</h3>
+            <p class="subtitle is-6 has-text-white">Лет опыта в образовании</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-background-white" id="courses">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered has-text-dark mb-6">Популярные курсы</h2>
+
+      <div class="columns is-multiline is-centered">
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card course-card">
+            <div class="course-image has-background-primary-gradient">
+              <i class="fas fa-laptop-code fa-3x"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="title is-4 has-text-dark">Веб-разработка с нуля</h3>
+              <p class="has-text-grey-darker">Научитесь создавать современные веб-приложения с HTML, CSS и JavaScript
+              </p>
+              <div class="is-flex is-justify-content-space-between is-align-items-center mb-4 course-meta">
+                <span><i class="fas fa-clock mr-2"></i>40 часов</span>
+                <span><i class="fas fa-users mr-2"></i>2.3K</span>
+              </div>
+              <button class="button is-link is-fullwidth">Подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card course-card">
+            <div class="course-image has-background-primary-gradient">
+              <i class="fa-brands fa-python fa-3x"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="title is-4 has-text-dark">Python для аналитики данных</h3>
+              <p class="has-text-grey-darker">Освойте анализ данных с помощью Python и самых популярных библиотек</p>
+              <div class="is-flex is-justify-content-space-between is-align-items-center mb-4 course-meta">
+                <span><i class="fas fa-clock mr-2"></i>50 часов</span>
+                <span><i class="fas fa-users mr-2"></i>1.8K</span>
+              </div>
+              <button class="button is-link is-fullwidth">Подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card course-card">
+            <div class="course-image has-background-primary-gradient">
+              <i class="fas fa-palette fa-3x"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="title is-4 has-text-dark">UI/UX Дизайн</h3>
+              <p class="has-text-grey-darker">Создавайте красивые и удобные интерфейсы для веб и мобильных приложений
+              </p>
+              <div class="is-flex is-justify-content-space-between is-align-items-center mb-4 course-meta">
+                <span><i class="fas fa-clock mr-2"></i>35 часов</span>
+                <span><i class="fas fa-users mr-2"></i>1.5K</span>
+              </div>
+              <button class="button is-link is-fullwidth">Подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card course-card">
+            <div class="course-image has-background-primary-gradient">
+              <i class="fas fa-database fa-3x"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="title is-4 has-text-dark">Базы данных и SQL</h3>
+              <p class="has-text-grey-darker">Овладейте проектированием БД и написанием эффективных SQL запросов</p>
+              <div class="is-flex is-justify-content-space-between is-align-items-center mb-4 course-meta">
+                <span><i class="fas fa-clock mr-2"></i>38 часов</span>
+                <span><i class="fas fa-users mr-2"></i>2.1K</span>
+              </div>
+              <button class="button is-link is-fullwidth">Подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card course-card">
+            <div class="course-image has-background-primary-gradient">
+              <i class="fas fa-mobile-alt fa-3x"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="title is-4 has-text-dark">Мобильная разработка</h3>
+              <p class="has-text-grey-darker">Разрабатывайте нативные приложения для iOS и Android</p>
+              <div class="is-flex is-justify-content-space-between is-align-items-center mb-4 course-meta">
+                <span><i class="fas fa-clock mr-2"></i>45 часов</span>
+                <span><i class="fas fa-users mr-2"></i>1.2K</span>
+              </div>
+              <button class="button is-link is-fullwidth">Подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card course-card">
+            <div class="course-image has-background-primary-gradient">
+              <i class="fas fa-brain fa-3x"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="title is-4 has-text-dark">Искусственный интеллект</h3>
+              <p class="has-text-grey-darker">Изучите основы ML и создавайте интеллектуальные приложения</p>
+              <div class="is-flex is-justify-content-space-between is-align-items-center mb-4 course-meta">
+                <span><i class="fas fa-clock mr-2"></i>60 часов</span>
+                <span><i class="fas fa-users mr-2"></i>980</span>
+              </div>
+              <button class="button is-link is-fullwidth">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-background-light" id="about">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <h2 class="title is-3 mb-5 has-text-dark">О нашей платформе</h2>
+          <p class="mb-4 has-text-grey-darker">
+            LearnHub – это современная платформа онлайн-обучения, созданная для того, чтобы помочь людям со всего мира
+            получать качественное образование.
+          </p>
+          <p class="mb-4 has-text-grey-darker">
+            Наша миссия – сделать образование доступным, удобным и интересным. Мы верим, что каждый человек может
+            достичь
+            своих целей при наличии правильных ресурсов и поддержки.
+          </p>
+          <p class="has-text-grey-darker">
+            С момента своего основания мы помогли более 50 000 студентов развить свои навыки и найти работу мечты в
+            IT-индустрии.
+          </p>
+        </div>
+        <div class="column">
+          <div class="about-image-container">
+            <figure class="image">
+              <img src="/assets/about.webp" alt="О нас">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-background-light" id="reviews">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered mb-6 has-text-dark">Отзывы студентов</h2>
+      <div class="columns is-multiline is-centered">
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card review-card">
+            <div class="card-content review-card-content">
+              <div class="content">
+                <p class="mb-4">
+                  <i class="fas fa-quote-left has-text-primary"></i>
+                  Отличная платформа! Курсы хорошо структурированы, а преподаватели очень опытные. Я получила новую
+                  работу
+                  благодаря этому курсу!
+                  <i class="fas fa-quote-right has-text-primary"></i>
+                </p>
+                <div>
+                  <p class="has-text-weight-bold mb-0">Мария Сергеева</p>
+                  <p class="has-text-grey">Frontend разработчик</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card review-card">
+            <div class="card-content review-card-content">
+              <div class="content">
+                <p class="mb-4">
+                  <i class="fas fa-quote-left has-text-primary"></i>
+                  Очень доволен качеством контента. Можно учиться в своем темпе, что идеально подходит для работающих
+                  людей. Рекомендую!
+                  <i class="fas fa-quote-right has-text-primary"></i>
+                </p>
+                <div>
+                  <p class="has-text-weight-bold mb-0">Иван Петров</p>
+                  <p class="has-text-grey">Data Scientist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card review-card">
+            <div class="card-content review-card-content">
+              <div class="content">
+                <p class="mb-4">
+                  <i class="fas fa-quote-left has-text-primary"></i>
+                  Спасибо за помощь и поддержку! Команда платформы очень помогала при возникновении вопросов. Всем
+                  советую!
+                  <i class="fas fa-quote-right has-text-primary"></i>
+                </p>
+                <div>
+                  <p class="has-text-weight-bold mb-0">Елена Иванова</p>
+                  <p class="has-text-grey">UI/UX дизайнер</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-background-success" id="contacts">
+    <div class="container has-text-centered">
+      <h2 class="title is-2">Начните обучение сегодня</h2>
+      <p class="subtitle is-4 m-5 has-text-white">Получайте доступ к полной библиотеке курсов, сертификатам и поддержке
+        наших
+        экспертов
+      </p>
+      <a href="#" class="button is-medium is-white has-text-success">
+        <span>Связаться с нами</span>
+        <span class="icon is-small">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer has-text-white pb-6">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h3 class="title is-4 has-text-white mb-4">
+            <i class="fas fa-code mr-2"></i>LearnHub
+          </h3>
+          <p class="mb-4">Платформа для онлайн-обучения нового поколения</p>
+          <div class="social-links">
+            <a href="#" class="button is-white mr-2 is-hovered">
+              <span class="icon has-text-link">
+                <i class="fab fa-vk"></i>
+              </span>
+            </a>
+            <a href="#" class="button is-white mr-2">
+              <span class="icon has-text-link">
+                <i class="fab fa-telegram"></i>
+              </span>
+            </a>
+            <a href="#" class="button is-white mr-2">
+              <span class="icon has-text-link">
+                <i class="fab fa-youtube"></i>
+              </span>
+            </a>
+            <a href="#" class="button is-white">
+              <span class="icon has-text-link">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="column">
+          <h4 class="title is-5 has-text-white mb-4">Навигация</h4>
+          <ul>
+            <li><a href="#opportunities" class="has-text-white">Возможности</a></li>
+            <li><a href="#courses" class="has-text-white">Курсы</a></li>
+            <li><a href="#about" class="has-text-white">О нас</a></li>
+            <li><a href="#reviews" class="has-text-white">Отзывы</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4 class="title is-5 has-text-white mb-4">Учебные материалы</h4>
+          <ul>
+            <li><a href="#" class="has-text-white">Все курсы</a></li>
+            <li><a href="#" class="has-text-white">Категории</a></li>
+            <li><a href="#" class="has-text-white">Популярное</a></li>
+            <li><a href="#" class="has-text-white">Новое</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4 class="title is-5 has-text-white mb-4">Документы</h4>
+          <ul>
+            <li><a href="#" class="has-text-white">Пользовательское соглашение</a></li>
+            <li><a href="#" class="has-text-white">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4 class="title is-5 has-text-white mb-4">Контакты</h4>
+          <ul>
+            <li class="mb-2">
+              <a href="mailto:contact@learnhub.ru" class="has-text-white">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <span>contact@learnhub.ru</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="tel:+74951234567" class="has-text-white">
+                <span class="icon"><i class="fas fa-phone"></i></span>
+                <span>+7 (495) 123-45-67</span>
+              </a>
+            </li>
+            <li class="has-text-white">
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+              <span>Москва, Россия</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content has-text-centered mt-6 pt-6 border-top">
+        <p>&copy; 2026 LearnHub. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/menu.js"></script>
 </body>
 
 </html>

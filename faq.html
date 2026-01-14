@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ – LearnHub</title>
+  <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar is-fixed-top is-link has-shadow" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <span class="icon" style="margin-right: 0.5rem;">
+            <i class="fas fa-code"></i>
+          </span>
+          <span class="text-logo">LearnHub</span>
+        </a>
+        <a role="button" class="navbar-burger" aria-label="toggle navigation" id="navbarBurger" style="color: white;">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">Главная</a>
+          <a class="navbar-item" href="index.html#opportunities">Возможности</a>
+          <a class="navbar-item" href="index.html#courses">Курсы</a>
+          <a class="navbar-item" href="index.html#about">О нас</a>
+          <a class="navbar-item" href="index.html#reviews">Отзывы</a>
+          <a class="navbar-item" href="contacts.html">Контакты</a>
+          <a class="navbar-item is-active" href="faq.html">FAQ</a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <span class="icon">
+              <i class="fa-regular fa-circle-user"></i>
+            </span>
+            <span>Кабинет</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero is-medium is-link">
+    <div class="hero-body pb-6">
+      <div class="container has-text-centered">
+        <h1 class="title is-2 has-text-weight-bold">
+          Часто задаваемые вопросы
+        </h1>
+        <p class="subtitle mt-3">
+          Найдите ответы на самые популярные вопросы о нашей платформе
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-background-light">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-10-tablet is-8-desktop">
+          <div class="field mb-5">
+            <div class="control has-icons-left">
+              <input class="input is-medium has-background-white has-text-grey" type="text" id="searchBox"
+                placeholder="Поиск по вопросам...">
+              <span class="icon is-small is-left has-text-grey">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </div>
+
+          <div id="faqList">
+            <div class="card faq-item mb-4" data-keywords="начать регистрация аккаунт">
+              <div class="card-header has-background-white">
+                <div class="card-header-title p-4"
+                  style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <h3 class="is-size-5 has-text-weight-medium has-text-link">Как начать пользоваться LearnHub?</h3>
+                  <span class="faq-toggle is-size-4 has-text-link">+</span>
+                </div>
+              </div>
+              <div class="card-content faq-answer p-4 has-background-white"
+                style="display: none; border-top: 1px solid lightgrey;">
+                <div class="content has-text-grey-darker">
+                  <p>Чтобы начать, выполните следующие шаги:</p>
+                  <p>
+                    1. Нажмите кнопку "Кабинет" в правом верхнем углу<br>
+                    2. Заполните форму регистрации (имя, email, пароль)<br>
+                    3. Подтвердите вашу почту по ссылке в письме<br>
+                    4. Войдите в свой аккаунт<br>
+                    5. Выберите интересующий вас курс и начните учиться
+                  </p>
+                  <p>Все функции платформы доступны сразу после регистрации!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card faq-item mb-4" data-keywords="обучение новичок опыта">
+              <div class="card-header has-background-white">
+                <div class="card-header-title p-4"
+                  style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <h3 class="is-size-5 has-text-weight-medium has-text-link">Подходит ли обучение для новичков без
+                    опыта?</h3>
+                  <span class="faq-toggle is-size-4 has-text-link">+</span>
+                </div>
+              </div>
+              <div class="card-content faq-answer p-4 has-background-white"
+                style="display: none; border-top: 1px solid lightgrey;">
+                <div class="content has-text-grey-darker">
+                  <p>Абсолютно! Наши курсы разработаны для студентов любого уровня подготовки.</p>
+                  <p>Для новичков предусмотрены специальные вводные модули, которые помогут освоить базовые понятия.</p>
+                  <p>Преподаватели всегда готовы ответить на ваши вопросы и помочь с трудными темами.
+                    Многие из наших успешных студентов начинали обучение без какого-либо опыта в IT.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card faq-item mb-4" data-keywords="стоимость цена подписка платить">
+              <div class="card-header has-background-white">
+                <div class="card-header-title p-4"
+                  style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <h3 class="is-size-5 has-text-weight-medium has-text-link">Какова стоимость подписки?</h3>
+                  <span class="faq-toggle is-size-4 has-text-link">+</span>
+                </div>
+              </div>
+              <div class="card-content faq-answer p-4 has-background-white"
+                style="display: none; border-top: 1px solid lightgrey;">
+                <div class="content has-text-grey-darker">
+                  <p>LearnHub предлагает несколько вариантов подписки:</p>
+                  <p>
+                    <strong class="has-text-dark">Бесплатный план:</strong> Доступ к выбранным курсам с
+                    ограничениями<br>
+                    <strong class="has-text-dark">Pro (1999 руб/месяц):</strong> Полный доступ ко всем курсам<br>
+                    <strong class="has-text-dark">Premium (3499 руб/месяц):</strong> Pro + личный наставник<br>
+                    <strong class="has-text-dark">Годовая подписка (18899 руб/год):</strong> Экономия 43% на Premium
+                    плане
+                  </p>
+                  <p>Вы можете попробовать любой платный план в течение 7 дней бесплатно!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card faq-item mb-4" data-keywords="отменить отмена подписка возврат">
+              <div class="card-header has-background-white">
+                <div class="card-header-title p-4"
+                  style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <h3 class="is-size-5 has-text-weight-medium has-text-link">Как отменить подписку или вернуть деньги?
+                  </h3>
+                  <span class="faq-toggle is-size-4 has-text-link">+</span>
+                </div>
+              </div>
+              <div class="card-content faq-answer p-4 has-background-white"
+                style="display: none; border-top: 1px solid lightgrey;">
+                <div class="content has-text-grey-darker">
+                  <p>У нас 100% гарантия возврата денег в течение первых 7 дней!</p>
+                  <p>Чтобы отменить подписку:</p>
+                  <p>
+                    1. Перейдите в раздел "Аккаунт" ➝ "Подписка"<br>
+                    2. Нажмите "Отменить подписку"<br>
+                    3. Подтвердите решение<br>
+                    4. Получите возврат на счет в течение 3-5 дней
+                  </p>
+                  <p>После отмены вы теряете доступ к платным материалам, но сохраняете доступ к бесплатному контенту.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card faq-item mb-4" data-keywords="платеж проблема ошибка платежа">
+              <div class="card-header has-background-white">
+                <div class="card-header-title p-4"
+                  style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <h3 class="is-size-5 has-text-weight-medium has-text-link">Что если у меня проблема с платежом?</h3>
+                  <span class="faq-toggle is-size-4 has-text-link">+</span>
+                </div>
+              </div>
+              <div class="card-content faq-answer p-4 has-background-white"
+                style="display: none; border-top: 1px solid lightgrey;">
+                <div class="content has-text-grey-darker">
+                  <p>Если вы столкнулись с проблемой при оплате:</p>
+                  <p>
+                    <strong class="has-text-dark">Шаг 1:</strong> Проверьте, что у вас достаточно средств на счете<br>
+                    <strong class="has-text-dark">Шаг 2:</strong> Убедитесь, что вводите верные данные карты<br>
+                    <strong class="has-text-dark">Шаг 3:</strong> Попробуйте другой способ оплаты<br>
+                    <strong class="has-text-dark">Шаг 4:</strong> Если проблема сохраняется, свяжитесь с нами
+                  </p>
+                  <p>Наша команда поддержки доступна 24/7 через форму контактов или email support@learnhub.ru</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card faq-item mb-4" data-keywords="сертификат диплом">
+              <div class="card-header has-background-white">
+                <div class="card-header-title p-4"
+                  style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <h3 class="is-size-5 has-text-weight-medium has-text-link">Как получить сертификат об окончании курса?
+                  </h3>
+                  <span class="faq-toggle is-size-4 has-text-link">+</span>
+                </div>
+              </div>
+              <div class="card-content faq-answer p-4 has-background-white"
+                style="display: none; border-top: 1px solid lightgrey;">
+                <div class="content has-text-grey-darker">
+                  <p>После завершения всех уроков курса вам нужно пройти финальный экзамен.</p>
+                  <p>Если вы наберете 70% и выше:</p>
+                  <p>
+                    1. Вы получите сертификат в электронном виде<br>
+                    2. Сертификат будет доступен в разделе "Мои сертификаты"<br>
+                    3. Вы можете скачать его в PDF или распечатать<br>
+                    4. Сертификаты подписываются руководителем образовательной программы
+                  </p>
+                  <p>Сертификаты имеют уникальный код для проверки подлинности!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card faq-item mb-4" data-keywords="обновление контент материалы">
+              <div class="card-header has-background-white">
+                <div class="card-header-title p-4"
+                  style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <h3 class="is-size-5 has-text-weight-medium has-text-link">Как часто обновляется контент?</h3>
+                  <span class="faq-toggle is-size-4 has-text-link">+</span>
+                </div>
+              </div>
+              <div class="card-content faq-answer p-4 has-background-white"
+                style="display: none; border-top: 1px solid lightgrey;">
+                <div class="content has-text-grey-darker">
+                  <p>Мы постоянно работаем над обновлением материалов.</p>
+                  <p>Основные курсы обновляются каждые 3-4 месяца в соответствии с изменениями в технологиях и
+                    индустрии.
+                  </p>
+                  <p>Все студенты с активной подпиской получают доступ к
+                    обновленному контенту без дополнительной оплаты.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card faq-item mb-4" data-keywords="техническая поддержка помощь ошибка">
+              <div class="card-header has-background-white">
+                <div class="card-header-title p-4"
+                  style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <h3 class="is-size-5 has-text-weight-medium has-text-link">Что делать, если у меня возникла
+                    техническая проблема?</h3>
+                  <span class="faq-toggle is-size-4 has-text-link">+</span>
+                </div>
+              </div>
+              <div class="card-content faq-answer p-4 has-background-white"
+                style="display: none; border-top: 1px solid lightgrey;">
+                <div class="content has-text-grey-darker">
+                  <p>Если вы столкнулись с технической проблемой:</p>
+                  <p>
+                    <strong class="has-text-dark">Способ 1:</strong> Заполните форму на <a href="contacts.html"
+                      class="has-text-link">странице контактов</a><br>
+                    <strong class="has-text-dark">Способ 2:</strong> Напишите на support@learnhub.com<br>
+                    <strong class="has-text-dark">Способ 3:</strong> Позвоните нам: +7 (495) 123-45-67
+                  </p>
+                  <p>Обязательно опишите проблему подробно и приложите скриншот ошибки. Среднее время ответа — 2-4 часа.
+                  </p>
+                  <p><strong class="has-text-dark">Советы:</strong> Попробуйте очистить кеш браузера
+                    (Ctrl+Shift+Delete) или использовать другой браузер.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="has-background-link has-text-white mt-6" style="border-radius: 12px;">
+            <div class="p-5 has-text-centered">
+              <h3 class="title is-4 mb-3">Не нашли ответ на свой вопрос?</h3>
+              <p class="subtitle is-6 mb-4 has-text-white">Наша служба поддержки всегда готова помочь вам.</p>
+              <a href="contacts.html" class="button is-white has-text-link is-medium">
+                <span>Свяжитесь с нами</span>
+                <span class="icon is-small ml-2">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer has-text-white pb-6">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3 mr-5">
+          <h3 class="title is-4 has-text-white mb-4">
+            <i class="fas fa-code mr-2"></i>LearnHub
+          </h3>
+          <p class="mb-4">Платформа для онлайн-обучения нового поколения</p>
+          <div class="social-links">
+            <a href="#" class="button is-white mr-2 is-hovered" target="_blank">
+              <span class="icon has-text-link">
+                <i class="fab fa-vk"></i>
+              </span>
+            </a>
+            <a href="#" class="button is-white mr-2" target="_blank">
+              <span class="icon has-text-link">
+                <i class="fab fa-telegram"></i>
+              </span>
+            </a>
+            <a href="#" class="button is-white mr-2" target="_blank">
+              <span class="icon has-text-link">
+                <i class="fab fa-youtube"></i>
+              </span>
+            </a>
+            <a href="#" class="button is-white" target="_blank">
+              <span class="icon has-text-link">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="column">
+          <h4 class="title is-5 has-text-white mb-3">Курсы</h4>
+          <ul>
+            <li><a href="#courses" class="has-text-white">Все курсы</a></li>
+            <li><a href="#" class="has-text-white">Бесплатные</a></li>
+            <li><a href="#" class="has-text-white">Популярные</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4 class="title is-5 has-text-white mb-3">Материалы</h4>
+          <ul>
+            <li><span class="has-text-white">Блог (скоро)</span></li>
+            <li><span class="has-text-white">База знаний (скоро)</span></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4 class="title is-5 has-text-white mb-3">Поддержка</h4>
+          <ul>
+            <li><a href="faq.html" class="has-text-white">FAQ</a></li>
+            <li><a href="contacts.html" class="has-text-white">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="column is-3">
+          <h4 class="title is-5 has-text-white mb-3">Документы</h4>
+          <ul>
+            <li><a href="#" class="has-text-white">Пользовательское соглашение</a></li>
+            <li><a href="#" class="has-text-white">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content has-text-centered mt-6 pt-6 border-top">
+        <p>&copy; 2026 LearnHub. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/accordion.js"></script>
+</body>
+
+</html>

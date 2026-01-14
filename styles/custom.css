@@ -23,7 +23,6 @@ html.no-scroll {
 .navbar,
 .navbar-menu {
   background: linear-gradient(135deg, #2659ac 0%, #1a4d9e 100%);
-  /* background: linear-gradient(135deg, #3273dc 0%, #2366d1 100%); */
 }
 
 .navbar-start {
@@ -45,6 +44,12 @@ html.no-scroll {
 
 .navbar-start>.navbar-item:hover {
   background: #2e68c5;
+}
+
+.navbar-item.is-active {
+  background-color: #2e68c5;
+  border-radius: 15px;
+  font-weight: 500;
 }
 
 .navbar-end {
@@ -169,12 +174,35 @@ html.no-scroll {
 
 .footer .social-links .button:hover {
   background-color: #48c78e !important;
-  color: white !important;
   transition: all 0.3s ease;
 }
 
 .footer .social-links .button:hover .icon i {
   color: white !important;
+}
+
+::placeholder,
+select:required {
+  color: #9ea2aa !important;
+}
+
+.contact-info a:hover,
+.useful-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-social {
+  border-top: 1px solid lightgray;
+}
+
+.contact-social .button:hover {
+  text-decoration: none;
+  background: #4258ff;
+  transition: all 0.3s ease;
+}
+
+.contact-social .button:hover .icon i {
+  color: white;
 }
 
 @media (max-width: 1024px) {

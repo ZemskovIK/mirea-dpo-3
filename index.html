@@ -35,11 +35,13 @@
       </div>
       <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-start">
+          <a class="navbar-item is-active" href="index.html">Главная</a>
           <a class="navbar-item" href="#opportunities">Возможности</a>
           <a class="navbar-item" href="#courses">Курсы</a>
           <a class="navbar-item" href="#about">О нас</a>
           <a class="navbar-item" href="#reviews">Отзывы</a>
-          <a class="navbar-item" href="#contacts">Контакты</a>
+          <a class="navbar-item" href="contacts.html">Контакты</a>
+          <a class="navbar-item" href="faq.html">FAQ</a>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
@@ -405,7 +407,7 @@
         наших
         экспертов
       </p>
-      <a href="#" class="button is-medium is-white has-text-success">
+      <a href="contacts.html" class="button is-medium is-white has-text-success">
         <span>Связаться с нами</span>
         <span class="icon is-small">
           <i class="fas fa-arrow-right"></i>
@@ -417,28 +419,28 @@
   <footer class="footer has-text-white pb-6">
     <div class="container">
       <div class="columns">
-        <div class="column">
+        <div class="column is-3 mr-5">
           <h3 class="title is-4 has-text-white mb-4">
             <i class="fas fa-code mr-2"></i>LearnHub
           </h3>
           <p class="mb-4">Платформа для онлайн-обучения нового поколения</p>
           <div class="social-links">
-            <a href="#" class="button is-white mr-2 is-hovered">
+            <a href="#" class="button is-white mr-2 is-hovered" target="_blank">
               <span class="icon has-text-link">
                 <i class="fab fa-vk"></i>
               </span>
             </a>
-            <a href="#" class="button is-white mr-2">
+            <a href="#" class="button is-white mr-2" target="_blank">
               <span class="icon has-text-link">
                 <i class="fab fa-telegram"></i>
               </span>
             </a>
-            <a href="#" class="button is-white mr-2">
+            <a href="#" class="button is-white mr-2" target="_blank">
               <span class="icon has-text-link">
                 <i class="fab fa-youtube"></i>
               </span>
             </a>
-            <a href="#" class="button is-white">
+            <a href="#" class="button is-white" target="_blank">
               <span class="icon has-text-link">
                 <i class="fab fa-github"></i>
               </span>
@@ -446,49 +448,32 @@
           </div>
         </div>
         <div class="column">
-          <h4 class="title is-5 has-text-white mb-4">Навигация</h4>
-          <ul>
-            <li><a href="#opportunities" class="has-text-white">Возможности</a></li>
-            <li><a href="#courses" class="has-text-white">Курсы</a></li>
-            <li><a href="#about" class="has-text-white">О нас</a></li>
-            <li><a href="#reviews" class="has-text-white">Отзывы</a></li>
-          </ul>
-        </div>
-        <div class="column">
-          <h4 class="title is-5 has-text-white mb-4">Учебные материалы</h4>
+          <h4 class="title is-5 has-text-white mb-3">Курсы</h4>
           <ul>
             <li><a href="#" class="has-text-white">Все курсы</a></li>
-            <li><a href="#" class="has-text-white">Категории</a></li>
-            <li><a href="#" class="has-text-white">Популярное</a></li>
-            <li><a href="#" class="has-text-white">Новое</a></li>
+            <li><a href="#" class="has-text-white">Бесплатные</a></li>
+            <li><a href="#courses" class="has-text-white">Популярные</a></li>
           </ul>
         </div>
         <div class="column">
-          <h4 class="title is-5 has-text-white mb-4">Документы</h4>
+          <h4 class="title is-5 has-text-white mb-3">Материалы</h4>
+          <ul>
+            <li><span class="has-text-white">Блог (скоро)</span></li>
+            <li><span class="has-text-white">База знаний (скоро)</span></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4 class="title is-5 has-text-white mb-3">Поддержка</h4>
+          <ul>
+            <li><a href="faq.html" class="has-text-white">FAQ</a></li>
+            <li><a href="contacts.html" class="has-text-white">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="column is-3">
+          <h4 class="title is-5 has-text-white mb-3">Документы</h4>
           <ul>
             <li><a href="#" class="has-text-white">Пользовательское соглашение</a></li>
             <li><a href="#" class="has-text-white">Политика конфиденциальности</a></li>
-          </ul>
-        </div>
-        <div class="column">
-          <h4 class="title is-5 has-text-white mb-4">Контакты</h4>
-          <ul>
-            <li class="mb-2">
-              <a href="mailto:contact@learnhub.ru" class="has-text-white">
-                <span class="icon"><i class="fas fa-envelope"></i></span>
-                <span>contact@learnhub.ru</span>
-              </a>
-            </li>
-            <li class="mb-2">
-              <a href="tel:+74951234567" class="has-text-white">
-                <span class="icon"><i class="fas fa-phone"></i></span>
-                <span>+7 (495) 123-45-67</span>
-              </a>
-            </li>
-            <li class="has-text-white">
-              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-              <span>Москва, Россия</span>
-            </li>
           </ul>
         </div>
       </div>
@@ -498,6 +483,23 @@
     </div>
   </footer>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.location.hash && window.location.hash !== '') {
+        const targetId = window.location.hash.substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          setTimeout(function () {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70,
+              behavior: 'smooth'
+            });
+          }, 100);
+        }
+      }
+    });
+  </script>
   <script src="scripts/menu.js"></script>
 </body>
 

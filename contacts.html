@@ -78,26 +78,34 @@
 
               <form id="contactForm">
                 <div class="field">
-                  <label class="label has-text-weight-medium has-text-grey-darker">Ваше имя</label>
+                  <label class="label has-text-weight-medium has-text-grey-darker">
+                    Ваше имя <span class="has-text-danger">*</span>
+                  </label>
                   <div class="control">
-                    <input class="input is-medium has-background-white has-text-grey" type="text"
-                      placeholder="Иван Иванов" required>
+                    <input class="input is-medium has-background-white has-text-grey" type="text" id="fullname"
+                      name="fullname" placeholder="Иван Иванов" required>
                   </div>
+                  <p class="help" id="fullnameHelp">Введите имя и фамилию (минимум 2 слова)</p>
                 </div>
 
                 <div class="field">
-                  <label class="label has-text-weight-medium has-text-grey-darker">Email</label>
+                  <label class="label has-text-weight-medium has-text-grey-darker">
+                    Email <span class="has-text-danger">*</span>
+                  </label>
                   <div class="control">
-                    <input class="input is-medium has-background-white has-text-grey" type="email"
-                      placeholder="example@email.com" required>
+                    <input class="input is-medium has-background-white has-text-grey" type="email" id="email"
+                      name="email" placeholder="example@email.com" required>
                   </div>
+                  <p class="help" id="emailHelp">Введите корректный email</p>
                 </div>
 
                 <div class="field">
-                  <label class="label has-text-weight-medium has-text-grey-darker">Тема</label>
+                  <label class="label has-text-weight-medium has-text-grey-darker">
+                    Тема <span class="has-text-danger">*</span>
+                  </label>
                   <div class="control">
                     <div class="select is-medium is-fullwidth">
-                      <select class="has-background-white" required>
+                      <select class="has-background-white" id="topic" name="topic" required>
                         <option value="" disabled selected>Выберите тему</option>
                         <option value="question" class="has-text-grey">Вопрос</option>
                         <option value="suggestion" class="has-text-grey">Предложение</option>
@@ -107,20 +115,25 @@
                       </select>
                     </div>
                   </div>
+                  <p class="help" id="topicHelp">Выберите тему обращения</p>
                 </div>
 
                 <div class="field">
-                  <label class="label has-text-weight-medium has-text-grey-darker">Сообщение</label>
+                  <label class="label has-text-weight-medium has-text-grey-darker">
+                    Сообщение <span class="has-text-danger">*</span>
+                  </label>
                   <div class="control">
-                    <textarea class="textarea is-medium has-background-white has-text-grey"
+                    <textarea class="textarea is-medium has-background-white has-text-grey" id="message" name="message"
                       placeholder="Напишите ваше сообщение здесь..." rows="5" required></textarea>
                   </div>
+                  <p class="help" id="messageHelp">До 500 символов</p>
                 </div>
 
                 <div class="field mb-5">
                   <div class="control">
                     <label class="checkbox has-text-grey-darker">
-                      <input type="checkbox" required> Я согласен на обработку моих персональных данных
+                      <input type="checkbox" id="agreement" name="agreement" required>
+                      Я согласен на обработку моих персональных данных
                     </label>
                   </div>
                 </div>
@@ -280,6 +293,8 @@
   </footer>
 
   <script src="scripts/menu.js"></script>
+  <script src="scripts/validation.js"></script>
+  <script src="scripts/consoleLogger.js"></script>
 </body>
 
 </html>
